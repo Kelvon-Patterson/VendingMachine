@@ -1,1 +1,1 @@
-# com.ms3.vendingmachine.VendingMachine.VendingMachine
+# com.ms3.vendingmachine.Vending.VendingMachine

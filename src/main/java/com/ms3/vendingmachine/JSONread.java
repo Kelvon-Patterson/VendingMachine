@@ -19,8 +19,9 @@ public class JSONread {
 
         try(FileReader reader = new FileReader("src/main/java/com/ms3/vendingmachine/snacks.json")){
             Object obj = jsonParser.parse(reader);
-            
-            JSONArray snackList= (JSONArray) obj;
+
+            JSONArray snackList= new JSONArray();
+            snackList.add(obj);
             System.out.println("snackList = " + snackList);
 
             snackList.forEach(item-> parseSnackObject( (JSONObject) item));
@@ -34,16 +35,15 @@ public class JSONread {
             //Get snack object within list
             JSONObject snackObject = (JSONObject) items.get("items");
 
-            String name = (String) items.get("name");
+            String name = (String) snackObject.get("name");
             System.out.println( name);
 
-            String price = (String) items.get("price");
+            String price = (String) snackObject.get("price");
             System.out.println(price);
 
 
-            String amount = (String) items.get("amount");
+            String amount = (String) snackObject.get("amount");
             System.out.println(amount);
-
-        }
+    }
 
 }

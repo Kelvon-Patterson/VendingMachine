@@ -11,7 +11,7 @@
     <groupId>com.ms3</groupId>
     <artifactId>VendingMachine</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>com.ms3.vendingmachine.VendingMachine.VendingMachine</name>
+    <name>com.ms3.vendingmachine.Vending.VendingMachine</name>
     <description>Demo project for Spring Boot</description>
     <properties>
         <java.version>11</java.version>
