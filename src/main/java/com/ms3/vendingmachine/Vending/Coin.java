@@ -1,4 +1,4 @@
 package com.ms3.vendingmachine.Vending;
 
-public class collectCash {
+public class Coin {
 }
